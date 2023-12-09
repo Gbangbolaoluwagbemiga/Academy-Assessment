@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Rubik:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@500&family=Rubik:wght@900&display=swap');
+
+header {
+  width: Fixed (1, 512px);
+  height: 64px;
+  margin: 48px 204px;
+  display: flex;
+}
+
+/* Left Header implementation started  */
+.left-header {
+  width: 629px;
+  height: 38px;
+  display: flex;
+}
+.assessment {
+  width: 204px;
+  height: 38px;
+}
+.logo-group_1 {
+  width: 30.17px;
+  height: 31px;
+  top: 4px;
+  left: 0;
+}
+.logo-group_2 {
+  width: 19.82px;
+  height: 6.24px;
+  top: 22.61px;
+  left: 5.18px;
+}
+.logo-group_3 {
+  width: 30.17px;
+  height: 31px;
+  top: 4px;
+  left: 0px;
+}
+.assessment-text {
+  width: 167px;
+  height: 38px;
+  left: 37px;
+  font-family: 'Rubik';
+  font-weight: 900;
+  size: 32px;
+  line-height: 37.92px;
+  color: rgba(8, 8, 8, 1);
+}
+.menu-1 {
+  width: Fixed (123px);
+  height: Fixed (447px);
+  gap: 18px;
+}
+.rectangle {
+  width: 10px;
+  height: 4px;
+  top: 19px;
+  border-radius: 12px;
+}
+.category-box {
+  width: Hug (96px);
+  height: Hug (19px);
+  gap: 2px;
+}
+
+.categories {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.category-icon {
+  width: Fixed (16px);
+  height: Fixed (16px);
+  rotate: 0;
+}
+
+.menu-2 {
+  width: Hug (44px);
+  height: Hug (19px);
+  left: 126px;
+}
+
+.teach {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.menu-3 {
+  width: Hug (79px);
+  height: Hug (19px);
+  left: 200px;
+}
+
+.contact {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.menu-4 {
+  width: Hug (66px);
+  height: Hug (19px);
+  left: 309px;
+}
+.about {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+/* Left Header implementation ended  */
+
+/* Right Header implementation started  */
+.right-header {
+  width: 703px;
+  height: 64px;
+  display: flex;
+}
+
+/* Right Header implementation started  */
+.search-box {
+  width: Fixed (288px);
+  height: Fixed (64px);
+  left: -18px;
+  padding: 8px, 20px, 8px, 16px;
+  border-radius: 12px;
+  gap: 16px;
+}
+.searcher {
+  width: 216px;
+  height: 15px;
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.search-icon {
+  width: Hug (20px);
+  height: Fixed (20px);
+}
+.user {
+  width: 191px;
+  height: 64px;
+  left: 55px;
+  display: flex;
+}
+.avatar-box {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+}
+.avatar {
+  width: 64px;
+  height: 64px;
+}
+.avatar-name {
+  width: 115px;
+  height: 19px;
+  top: 9px;
+  left: 76px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.avatar-occupation {
+  width: 97px;
+  height: 15px;
+  top: 40px;
+  left: 76px;
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.notification {
+  width: 64px;
+  height: 64px;
+  left: 296px;
+  border-radius: 12px;
+  border: 5px solid rgba(158, 92, 242, 0.05);
+}
+.notification-icon {
+  width: Hug (20px);
+  height: Fixed (20px);
+  top: 22px;
+  left: 318px;
+}
