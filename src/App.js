@@ -1,12 +1,14 @@
-import NavBar from './components/NavBar';
-import SubHeader from './components/SubHeader';
+import TopPanel from './components/TopPanel';
+import TopCategories from './components/TopCategories';
+import SubHeader from './components/TopCategories';
 
 function App() {
   return (
     <div className=" container">
-      <NavBar />
+      <TopCategories />
       <hr />
       <SubHeader />
+      <TopPanel />
     </div>
   );
 }

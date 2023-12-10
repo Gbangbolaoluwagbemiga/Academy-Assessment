@@ -3,7 +3,7 @@ import ForwardIcon from '../Images/forward-icon.png';
 import video from '../Images/vid icon.jpg';
 import category from '../Images/category icon.png';
 
-function SubHeader() {
+function TopCategories() {
   return (
     <div className="row">
       <div className="row col-4">
@@ -36,4 +36,4 @@ function SubHeader() {
   );
 }
 
-export default SubHeader;
+export default TopCategories;
