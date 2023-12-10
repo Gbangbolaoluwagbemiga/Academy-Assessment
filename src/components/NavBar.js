@@ -5,49 +5,32 @@ import Vector from '../Images/Vector.png';
 import ForwardIcon from '../Images/forward.png';
 import searchIcon from '../Images/search.png';
 import BackgroundCircle from '../Images/circle.jpg';
-import NotificationIcon from '../Images/notification.png';
+import NotificationIcon from '../Images/Bell.png';
 import ModelSit from '../Images/sitting down.jpg';
 
 function NavBar() {
   return (
-    <header className="row mt-5">
-      <div className="left-header row col-5">
+    <header className="row mt-5 top-header">
+      <div className="left-header row col-5 me-5">
         <p className="assessment col-3">
-          <span className="logo-group_1">
+          <span className="logo-group_1 ms-2">
             <img className="vector-1" src={AcademyPng} alt="Academy icon" />
-            <span className="logo-group_2">
-              <img className="vector-2" src="" alt="" />
-              <img className="vector-3" src="" alt="" />
-            </span>
-            <span className="logo-group_1">
-              <img className="vector-4" src="" alt="" />
-              <img className="vector-5" src="" alt="" />
-              <img className="vector-6" src="" alt="" />
-              <img className="vector-7" src="" alt="" />
-              <img className="vector-8" src="" alt="" />
-            </span>
           </span>
           <span className="assessment-text">ACADEMY</span>
         </p>
-        <p className="menu-1 row col-9">
+        <p className=" assessment-menu row col-9">
           <p className="category-box col-3">
             <span className="Categories">Categories</span>
             <img className="category-icon" src="" alt="" />
           </p>
-          <p className="menu-2 col-2">
-            <span className="teach">Teach</span>
-          </p>
-          <p className="menu-3 col-4 justify-content-right">
-            <span className="contact">Contact Us</span>
-          </p>
-          <p className="menu-4 col-3">
-            <span className="about">About Us</span>
-          </p>
+          <p className="teach col-2 justify-content-end">Teach</p>
+          <p className=" contact col-3 justify-content-end">Contact Us</p>
+          <p className="about col-3">About Us</p>
         </p>
       </div>
 
-      <div className="right-header row col-7">
-        <div className="search-box col-4">
+      <div className="right-header row col-6">
+        <div className="search-box col-5 justify-content-end">
           <input
             type="text"
             placeholder="Search Anything"
@@ -57,12 +40,12 @@ function NavBar() {
         </div>
         <div className="user row col-5">
           <img src={Avatar} alt="avatar" className="avatar col-4" />
-          <p className="col-8">
-            <p className="avatar-name">Behzad Pashaei</p>
-            <p className="avatar-occupation">Ui & Ux Designer</p>
+          <p className="col-8 ">
+            <span className="avatar-name">Behzad Pashaei</span>
+            <span className="avatar-occupation">Ui & Ux Designer</span>
           </p>
         </div>
-        <div className="notification col-3">
+        <div className="notification col-2">
           <img
             src={NotificationIcon}
             alt="Notification-icon"
