@@ -22,7 +22,7 @@ function SubHeader() {
         <p className="col-5">Vector</p>
       </div>
       <div className="row col-5">
-        <p className="col-2 justify-content-end">
+        <p className="col-2 ps-4 justify-content-end">
           <img src={video} alt="Video-icon" />
         </p>
         <p className="col-3 after-effect">After Effects</p>
