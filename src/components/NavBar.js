@@ -55,15 +55,19 @@ function NavBar() {
           />
           <img className="search-icon" src="" alt="" />
         </div>
-        <div className="user col-5">
-          <img src="" alt="" className="avatar" />
-          <p>
+        <div className="user row col-5">
+          <img src={Avatar} alt="avatar" className="avatar col-4" />
+          <p className="col-8">
             <p className="avatar-name">Behzad Pashaei</p>
             <p className="avatar-occupation">Ui & Ux Designer</p>
           </p>
         </div>
         <div className="notification col-3">
-          <img src="" alt="" className="notification-icon" />
+          <img
+            src={NotificationIcon}
+            alt="Notification-icon"
+            className="notification-icon"
+          />
         </div>
       </div>
     </header>
