@@ -40,6 +40,20 @@ hr {
   color: white;
 }
 
+.searcher {
+  width: 80%;
+  padding: 0.35rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.searcher:focus {
+  width: 90%;
+}
+.search-icon {
+  position: relative;
+  margin-left: -1.75rem;
+}
+
 /* Sub-header component  */
 .tag-icon {
   /* border: ; */
@@ -48,3 +62,4 @@ hr {
 .after-effect {
   width: 7.1rem;
 }
+/* Main component */
