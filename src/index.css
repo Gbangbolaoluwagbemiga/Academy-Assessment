@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@500&family=Rubik:wght@900&display=swap');
 
 header {
-  width: Fixed (1, 512px);
+  width: 1, 512px;
   height: 64px;
   margin: 48px 204px;
   display: flex;
@@ -10,34 +10,34 @@ header {
 
 /* Left Header implementation started  */
 .left-header {
-  width: 629px;
+  /* width: 629px; */
   height: 38px;
   display: flex;
 }
 .assessment {
-  width: 204px;
+  /* width: 204px; */
   height: 38px;
 }
 .logo-group_1 {
-  width: 30.17px;
+  /* width: 30.17px; */
   height: 31px;
   top: 4px;
   left: 0;
 }
 .logo-group_2 {
-  width: 19.82px;
+  /* width: 19.82px; */
   height: 6.24px;
   top: 22.61px;
   left: 5.18px;
 }
 .logo-group_3 {
-  width: 30.17px;
+  /* width: 30.17px; */
   height: 31px;
   top: 4px;
   left: 0px;
 }
 .assessment-text {
-  width: 167px;
+  /* width: 167px; */
   height: 38px;
   left: 37px;
   font-family: 'Rubik';
@@ -47,9 +47,8 @@ header {
   color: rgba(8, 8, 8, 1);
 }
 .menu-1 {
-  width: Fixed (123px);
-  height: Fixed (447px);
-  gap: 18px;
+  /* width: (123px); */
+  height: 447px;
 }
 .rectangle {
   width: 10px;
@@ -58,8 +57,8 @@ header {
   border-radius: 12px;
 }
 .category-box {
-  width: Hug (96px);
-  height: Hug (19px);
+  width: 96px;
+  height: 19px;
   gap: 2px;
 }
 
@@ -68,18 +67,17 @@ header {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
-  letter-spacing: 0px;
   text-align: left;
 }
 .category-icon {
-  width: Fixed (16px);
-  height: Fixed (16px);
+  /* width: 16px; */
+  height: 16px;
   rotate: 0;
 }
 
 .menu-2 {
-  width: Hug (44px);
-  height: Hug (19px);
+  width: 44px;
+  height: 19px;
   left: 126px;
 }
 
@@ -93,8 +91,7 @@ header {
 }
 
 .menu-3 {
-  width: Hug (79px);
-  height: Hug (19px);
+  height: 19px;
   left: 200px;
 }
 
@@ -108,8 +105,8 @@ header {
 }
 
 .menu-4 {
-  width: Hug (66px);
-  height: Hug (19px);
+  /* width: (66px); */
+  height: 19px;
   left: 309px;
 }
 .about {
@@ -131,15 +128,15 @@ header {
 
 /* Right Header implementation started  */
 .search-box {
-  width: Fixed (288px);
-  height: Fixed (64px);
+  /* width: (288px); */
+  height: (64px);
   left: -18px;
   padding: 8px, 20px, 8px, 16px;
   border-radius: 12px;
   gap: 16px;
 }
 .searcher {
-  width: 216px;
+  /* width: 216px; */
   height: 15px;
   font-family: 'Roboto';
   font-size: 13px;
@@ -149,8 +146,8 @@ header {
   text-align: left;
 }
 .search-icon {
-  width: Hug (20px);
-  height: Fixed (20px);
+  /* width: (20px); */
+  height: (20px);
 }
 .user {
   width: 191px;
@@ -199,8 +196,8 @@ header {
   border: 5px solid rgba(158, 92, 242, 0.05);
 }
 .notification-icon {
-  width: Hug (20px);
-  height: Fixed (20px);
+  width: (20px);
+  height: (20px);
   top: 22px;
   left: 318px;
 }
