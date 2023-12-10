@@ -1,11 +1,8 @@
 import AcademyPng from '../Images/Academy.png';
 import Avatar from '../Images/Avatar.png';
-import Tag from '../Images/Tag.png';
-import Vector from '../Images/Vector.png';
-import ForwardIcon from '../Images/forward.png';
 import searchIcon from '../Images/search.png';
-import BackgroundCircle from '../Images/circle.jpg';
 import NotificationIcon from '../Images/Bell.png';
+import BackgroundCircle from '../Images/circle.jpg';
 import ModelSit from '../Images/sitting down.jpg';
 
 function NavBar() {
@@ -36,7 +33,7 @@ function NavBar() {
             placeholder="Search Anything"
             className="searcher"
           />
-          <img className="search-icon" src="" alt="" />
+          <img className="search-icon" src={searchIcon} alt="Search-icon" />
         </div>
         <div className="user row col-5">
           <img src={Avatar} alt="avatar" className="avatar col-4" />
@@ -45,7 +42,7 @@ function NavBar() {
             <span className="avatar-occupation">Ui & Ux Designer</span>
           </p>
         </div>
-        <div className="notification col-2">
+        <div className="notification col-2 justify-content-end">
           <img
             src={NotificationIcon}
             alt="Notification-icon"
