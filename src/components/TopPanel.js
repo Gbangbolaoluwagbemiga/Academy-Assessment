@@ -1,19 +1,35 @@
 import Arrow from '../Images/arrows.png';
-import BackgroundCircle from '../Images/circle.jpg';
-import ModelSit from '../Images/sitting down.jpg';
+import devModel from '../Images/Model.png';
+import btnIcon from '../Images/btn-icon.png';
+import btnContainer from '../Images/btn container.png';
 
 function TopPanel() {
   return (
     <div className="row mt-5">
-      <div className="col-4 left-top-panel align-items-end">
+      <div className="col-md-5 left-top-panel align-items-end mt-5">
         🙌 Hello Friends <br /> I Am Sofia And We Want To Start <br /> A{' '}
         <span className="sub--text"> Web Design</span> Course Together. Do You
         Like It Too 😍 ?
         <img src={Arrow} alt="" className="arrow-icon" />
-        <button>Start co</button>
+        <div className="btn-ui row mt-2 ">
+          <button className=" btn-panel col-6">
+            Start Course Now <img src={btnIcon} alt="icon" />
+          </button>
+
+          <img
+            src={btnContainer}
+            alt="images"
+            className="col-5 justify-items-end img-fluid"
+          />
+        </div>
       </div>
-      <div className="col-6 model">
-        <img src="image source" class="img-fluid rounded-top" alt="model" />
+
+      <div className="col-md-7 model justify-content-end">
+        <img
+          src={devModel}
+          class="img-fluid dev-model rounded-top"
+          alt="model"
+        />
       </div>
     </div>
   );

@@ -58,6 +58,13 @@ hr {
 .tag-icon {
   /* border: ; */
   /* background-color: rgba(0, 158, 104, 1); */
+  /* rgba(250, 250, 250, 1) */
+}
+.img-tag {
+  height: 55%;
+}
+.img-category-icon {
+  height: 40%;
 }
 .after-effect {
   width: 7.1rem;
@@ -76,8 +83,19 @@ hr {
   position: absolute;
   left: 15%;
   height: 5.5rem;
-  /* transform: translateX(-100%); */
 }
-.model {
-  background-image: url(./Images/circle.jpg);
+.dev-model {
+  height: 80%;
+}
+
+.btn-ui {
+  display: block;
+}
+.btn-panel {
+  background-color: rgba(8, 8, 8, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 0.75rem;
 }
