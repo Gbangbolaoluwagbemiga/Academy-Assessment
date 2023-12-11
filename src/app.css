@@ -137,3 +137,7 @@ hr {
   font-family: 'Roboto';
   font-weight: 600;
 }
+.tabs {
+  display: flex;
+  justify-content: space-around;
+}
