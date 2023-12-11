@@ -2,8 +2,6 @@ import AcademyPng from '../Images/Academy.png';
 import Avatar from '../Images/Avatar.png';
 import searchIcon from '../Images/search.png';
 import NotificationIcon from '../Images/Bell.png';
-import BackgroundCircle from '../Images/circle.jpg';
-import ModelSit from '../Images/sitting down.jpg';
 
 function NavBar() {
   return (

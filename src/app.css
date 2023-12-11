@@ -54,7 +54,7 @@ hr {
   margin-left: -1.75rem;
 }
 
-/* Sub-header component  */
+/* Top-categories component  */
 .tag-icon {
   /* border: ; */
   /* background-color: rgba(0, 158, 104, 1); */
@@ -62,4 +62,22 @@ hr {
 .after-effect {
   width: 7.1rem;
 }
-/* Main component */
+/* Top-panel component */
+.left-top-panel {
+  font-family: 'Roboto';
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 1);
+}
+.sub--text {
+  color: rgba(177, 118, 242, 1);
+}
+.arrow-icon {
+  position: absolute;
+  left: 15%;
+  height: 5.5rem;
+  /* transform: translateX(-100%); */
+}
+.model {
+  background-image: url(./Images/circle.jpg);
+}

@@ -1,13 +1,13 @@
 import TopPanel from './components/TopPanel';
+import NavBar from './components/NavBar';
 import TopCategories from './components/TopCategories';
-import SubHeader from './components/TopCategories';
 
 function App() {
   return (
     <div className=" container">
-      <TopCategories />
+      <NavBar />
       <hr />
-      <SubHeader />
+      <TopCategories />
       <TopPanel />
     </div>
   );
