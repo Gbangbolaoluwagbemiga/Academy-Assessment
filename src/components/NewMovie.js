@@ -1,5 +1,14 @@
 import DownWardIcon from '../Images/new-course icon.png';
 
+const initialState={
+    course:[]
+
+}
+function reducer(){
+    switch
+}
+
+
 function NewMovie() {
   return (
     <div className="new-movies mt-5">
@@ -21,9 +30,21 @@ function NewMovie() {
         <img src={} alt="Course-content" className='col-12' />
         <p className="course-title col-12"></p>
         <div className="features row">
-            <p className='col-4'></p>
-            <p className='col-4'></p>
-            <p className='col-4'></p>
+            <p className='col-4'>
+                <img src={} alt="Icon"  className='col-2'/>
+                <p className='col-6'>Lesson:</p>
+                <p className='col-6'>{}</p>
+            </p>
+            <p className='col-4'>
+                <img src={} alt="Icon"  className='col-2'/>
+                <p className='col-6'>Student:</p>
+                <p className='col-6'>{}</p>
+            </p>
+            <p className='col-4'>
+            <img src={} alt="Icon"  className='col-2'/>
+                <p className='col-6'>Student:</p>
+               
+            </p>
         </div>
       </div>
     </div>
