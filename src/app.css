@@ -109,11 +109,25 @@ hr {
 }
 
 /* Search panel component */
-.search-header-text {
+.search-box {
   font-family: 'Roboto';
+}
+.search-header-text {
   font-weight: 700;
 }
 .btn-search {
   font-size: 1.25rem;
   height: 3rem;
+}
+.search-field {
+  width: 97%;
+  padding: 10px;
+}
+.search-field:focus {
+  width: 100%;
+}
+.search-arrow {
+  position: absolute;
+  right: 20%;
+  margin-bottom: 20rem;
 }
