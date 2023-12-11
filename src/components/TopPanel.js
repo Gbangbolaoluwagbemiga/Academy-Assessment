@@ -24,10 +24,10 @@ function TopPanel() {
         </div>
       </div>
 
-      <div className="col-md-7 model justify-content-end">
+      <div className="col-md-7 model ms-auto justify-content-end">
         <img
           src={devModel}
-          class="img-fluid dev-model rounded-top"
+          className="img-fluid dev-model justify-items-end rounded-top ms-auto"
           alt="model"
         />
       </div>
