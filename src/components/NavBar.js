@@ -1,12 +1,13 @@
 import AcademyPng from '../Images/Academy.png';
 import Avatar from '../Images/Avatar.png';
 import searchIcon from '../Images/search.png';
+import downIcon from '../Images/downIcon.png';
 import NotificationIcon from '../Images/Bell.png';
 
 function NavBar() {
   return (
     <header className="row mt-5 top-header">
-      <div className="left-header row col-5 me-5">
+      <div className="left-header row col-6 ">
         <p className="assessment col-3">
           <span className="logo-group_1 ms-2">
             <img className="vector-1" src={AcademyPng} alt="Academy icon" />
@@ -16,7 +17,7 @@ function NavBar() {
         <p className=" assessment-menu row col-9">
           <p className="category-box col-3">
             <span className="Categories">Categories</span>
-            <img className="category-icon" src="" alt="" />
+            <img className="category-icon" src={downIcon} alt="downward-icon" />
           </p>
           <p className="teach col-2 justify-content-end">Teach</p>
           <p className=" contact col-3 justify-content-end">Contact Us</p>
@@ -40,11 +41,11 @@ function NavBar() {
             <span className="avatar-occupation">Ui & Ux Designer</span>
           </p>
         </div>
-        <div className="notification col-2 justify-content-end">
+        <div className="notification col-2 ms-3  justify-content-end">
           <img
             src={NotificationIcon}
             alt="Notification-icon"
-            className="notification-icon"
+            className="notification-icon pt-2"
           />
         </div>
       </div>

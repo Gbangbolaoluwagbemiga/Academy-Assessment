@@ -22,8 +22,10 @@
   width: 6.5rem;
 }
 
-.right-header {
+.category-box {
+  width: 7.5rem;
 }
+
 .avatar {
   height: 3.5rem;
 }
@@ -34,7 +36,11 @@
   margin-bottom: 5px;
 }
 
-.notification-icon {
+.notification {
+  background: rgba(158, 92, 242, 0.05);
+  border: 1px solid rgba(158, 92, 242, 0.05);
+  width: 3rem;
+  height: 3rem;
 }
 hr {
   color: white;
