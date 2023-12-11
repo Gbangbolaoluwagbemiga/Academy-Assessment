@@ -3,7 +3,7 @@ import Arrow from '../Images/SearchPanelArrow.png';
 
 function SearchPanel() {
   return (
-    <div className="mx-auto search-box">
+    <div className="mx-auto mb-5 search-box">
       <h2 className="text-center search-header-text mb-5 ">
         Search Among <span className="sub--text">58340 </span> Courses And{' '}
         <br /> Find Your Favorite Course

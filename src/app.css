@@ -131,3 +131,9 @@ hr {
   right: 20%;
   margin-bottom: 20rem;
 }
+
+/* New movie component  */
+.new-movies {
+  font-family: 'Roboto';
+  font-weight: 600;
+}
