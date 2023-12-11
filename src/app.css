@@ -91,7 +91,8 @@ hr {
   height: 5.5rem;
 }
 .dev-model {
-  height: 80%;
+  height: 35rem;
+  width: 100%;
 }
 
 .btn-ui {
@@ -101,9 +102,18 @@ hr {
   background-color: rgba(8, 8, 8, 1);
   color: rgba(255, 255, 255, 1);
   font-family: 'Roboto';
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  padding: 10px 5px;
   font-weight: 500;
   border-radius: 0.75rem;
 }
 
 /* Search panel component */
+.search-header-text {
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+.btn-search {
+  font-size: 1.25rem;
+  height: 3rem;
+}
