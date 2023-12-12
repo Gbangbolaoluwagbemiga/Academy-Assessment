@@ -9,10 +9,13 @@ function NavBar() {
     <header className="row mt-5 top-header">
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
-          {/* <p className="navbar-brand">Navbar</p> */}
-          <p className="assessment col-3">
+          <p className="assessment ">
             <span className="logo-group_1 ms-2">
-              <img className="vector-1" src={AcademyPng} alt="Academy icon" />
+              <img
+                className="vector-1 me-2"
+                src={AcademyPng}
+                alt="Academy icon"
+              />
             </span>
             <span className="assessment-text">ACADEMY</span>
           </p>
@@ -28,7 +31,7 @@ function NavBar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul className="navbar-nav me-2 mb-2 mb-lg-0  assessment-menu ">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0  assessment-menu ">
               <li className="nav-item">
                 <p className="category-box ">
                   <span className="Categories">Categories</span>
@@ -50,7 +53,7 @@ function NavBar() {
               </li>
             </ul>
 
-            <form className="d-flex" role="search">
+            <form className=" me-auto">
               <div className="search-box ">
                 <input
                   type="search"
@@ -64,6 +67,22 @@ function NavBar() {
                 />
               </div>
             </form>
+
+            <div className="user d-flex me-5">
+              <img src={Avatar} alt="avatar" className="avatar  me-3" />
+              <p className="col- ">
+                <span className="avatar-name">Behzad Pashaei</span>
+                <span className="avatar-occupation">Ui & Ux Designer</span>
+              </p>
+            </div>
+
+            <div className="notification col-2 ms-3  justify-content-end">
+              <img
+                src={NotificationIcon}
+                alt="Notification-icon"
+                className="notification-icon pt-2"
+              />
+            </div>
           </div>
         </div>
       </nav>

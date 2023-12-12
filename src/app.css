@@ -25,10 +25,6 @@
   width: 4.5rem;
 }
 
-/* .category-box {
-  width: 7.5rem;
-} */
-
 .avatar {
   height: 3.5rem;
 }
@@ -50,13 +46,13 @@ hr {
 }
 
 .searcher {
-  width: 80%;
+  width: 95%;
   padding: 0.35rem;
   border-radius: 0.5rem;
   transition: 0.3s;
 }
 .searcher:focus {
-  width: 90%;
+  width: 100%;
 }
 .search-icon {
   position: relative;
