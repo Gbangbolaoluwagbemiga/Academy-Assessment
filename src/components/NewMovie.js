@@ -1,8 +1,7 @@
-import {Axios} from 'axios';
 import DownWardIcon from '../Images/new-course icon.png';
 
 const initialState = {
-  course: [],
+  courses: [],
 };
 function reducer(state, action) {
   switch (action.type) {
