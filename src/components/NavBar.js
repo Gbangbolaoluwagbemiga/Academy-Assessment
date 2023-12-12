@@ -115,7 +115,7 @@ function NavBar() {
         </div>
         <div className="user row col-5">
           <img src={Avatar} alt="avatar" className="avatar col-4" />
-          <p className="col-8 ">
+          <p>
             <span className="avatar-name">Behzad Pashaei</span>
             <span className="avatar-occupation">Ui & Ux Designer</span>
           </p>
