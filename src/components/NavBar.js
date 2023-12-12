@@ -6,7 +6,7 @@ import NotificationIcon from '../Images/Bell.png';
 
 function NavBar() {
   return (
-    <header className="row my-auto top-header">
+    <header className="row mb-5 top-header">
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
           <p className="assessment ">
@@ -68,13 +68,13 @@ function NavBar() {
               </div>
             </form>
 
-            <div className="user d-flex me-auto mt-3 mb-5">
+            <div className="user d-flex me-auto mt-4">
               <img src={Avatar} alt="avatar" className="avatar  me-3" />
               <p className="me-auto">
                 <span className="avatar-name">Behzad Pashaei</span>
                 <span className="avatar-occupation">Ui & Ux Designer</span>
               </p>
-              <div className="notification ">
+              <div className="notification ms-md-5">
                 <img
                   src={NotificationIcon}
                   alt="Notification-icon"
