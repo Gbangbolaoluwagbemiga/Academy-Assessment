@@ -7,6 +7,66 @@ import NotificationIcon from '../Images/Bell.png';
 function NavBar() {
   return (
     <header className="row mt-5 top-header">
+      <nav className="navbar navbar-expand-lg ">
+        <div className="container-fluid">
+          {/* <p className="navbar-brand">Navbar</p> */}
+          <p className="assessment col-3">
+            <span className="logo-group_1 ms-2">
+              <img className="vector-1" src={AcademyPng} alt="Academy icon" />
+            </span>
+            <span className="assessment-text">ACADEMY</span>
+          </p>
+          <button
+            className="navbar-toggler btn-sm"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul className="navbar-nav me-2 mb-2 mb-lg-0  assessment-menu ">
+              <li className="nav-item">
+                <p className="category-box ">
+                  <span className="Categories">Categories</span>
+                  <img
+                    className="category-icon"
+                    src={downIcon}
+                    alt="downward-icon"
+                  />
+                </p>{' '}
+              </li>
+              <li className="nav-item teach">
+                <p>Teach</p>
+              </li>
+              <li className="nav-item">
+                <p>Contact Us</p>
+              </li>
+              <li className="nav-item">
+                <p>About Us</p>
+              </li>
+            </ul>
+
+            <form className="d-flex" role="search">
+              <div className="search-box ">
+                <input
+                  type="search"
+                  placeholder="Search Anything"
+                  className="searcher "
+                />
+                <img
+                  className="search-icon"
+                  src={searchIcon}
+                  alt="Search-icon"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
       <div className="left-header row col-6 ">
         <p className="assessment col-3">
           <span className="logo-group_1 ms-2">

@@ -3,6 +3,7 @@ import NavBar from './components/NavBar';
 import TopCategories from './components/TopCategories';
 import SearchPanel from './components/SearchPanel';
 import NewMovie from './components/NewMovie';
+import Courses from './Redux/Courses';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <TopPanel />
       <SearchPanel />
       <NewMovie />
+      <Courses />
     </div>
   );
 }

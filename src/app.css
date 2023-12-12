@@ -18,13 +18,16 @@
   font-weight: 900;
   color: rgba(8, 8, 8, 1);
 }
-.contact {
+.nav-item {
   width: 6.5rem;
 }
-
-.category-box {
-  width: 7.5rem;
+.teach {
+  width: 4.5rem;
 }
+
+/* .category-box {
+  width: 7.5rem;
+} */
 
 .avatar {
   height: 3.5rem;

@@ -1,25 +1,6 @@
 import DownWardIcon from '../Images/new-course icon.png';
 
-const initialState = {
-  courses: [],
-};
-function reducer(state, action) {
-  switch (action.type) {
-    case 'value':
-
-    default:
-      return state;
-  }
-}
-
 function NewMovie() {
-  function fetchCourse() {
-    Axios.get('https://freetestapi.com/api/v1/books').then(res =>
-      console.log(res)
-    );
-  }
-  fetchCourse();
-
   return (
     <div className="new-movies mt-5">
       <div className="new-movies-header row">
