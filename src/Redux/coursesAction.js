@@ -1,5 +1,11 @@
 export const fetchCourseRequests = () => {
   return {
-    type: '',
+    type: 'user/requests',
+  };
+};
+export const fetchCourseSuccess = () => {
+  return {
+    type: 'user/success',
+    payload: 'User',
   };
 };
