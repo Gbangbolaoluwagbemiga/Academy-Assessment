@@ -6,7 +6,7 @@ import NotificationIcon from '../Images/Bell.png';
 
 function NavBar() {
   return (
-    <header className="row mt-5 top-header">
+    <header className="row my-auto top-header">
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
           <p className="assessment ">
@@ -68,66 +68,23 @@ function NavBar() {
               </div>
             </form>
 
-            <div className="user d-flex me-5">
+            <div className="user d-flex me-auto mt-3 mb-5">
               <img src={Avatar} alt="avatar" className="avatar  me-3" />
-              <p className="col- ">
+              <p className="me-auto">
                 <span className="avatar-name">Behzad Pashaei</span>
                 <span className="avatar-occupation">Ui & Ux Designer</span>
               </p>
-            </div>
-
-            <div className="notification col-2 ms-3  justify-content-end">
-              <img
-                src={NotificationIcon}
-                alt="Notification-icon"
-                className="notification-icon pt-2"
-              />
+              <div className="notification ">
+                <img
+                  src={NotificationIcon}
+                  alt="Notification-icon"
+                  className="notification-icon pt-2"
+                />
+              </div>
             </div>
           </div>
         </div>
       </nav>
-      <div className="left-header row col-6 ">
-        <p className="assessment col-3">
-          <span className="logo-group_1 ms-2">
-            <img className="vector-1" src={AcademyPng} alt="Academy icon" />
-          </span>
-          <span className="assessment-text">ACADEMY</span>
-        </p>
-        <p className=" assessment-menu row col-9">
-          <p className="category-box col-3">
-            <span className="Categories">Categories</span>
-            <img className="category-icon" src={downIcon} alt="downward-icon" />
-          </p>
-          <p className="teach col-2 justify-content-end">Teach</p>
-          <p className=" contact col-3 justify-content-end">Contact Us</p>
-          <p className="about col-3">About Us</p>
-        </p>
-      </div>
-
-      <div className="right-header row col-6">
-        <div className="search-box col-5 justify-content-end">
-          <input
-            type="text"
-            placeholder="Search Anything"
-            className="searcher"
-          />
-          <img className="search-icon" src={searchIcon} alt="Search-icon" />
-        </div>
-        <div className="user row col-5">
-          <img src={Avatar} alt="avatar" className="avatar col-4" />
-          <p>
-            <span className="avatar-name">Behzad Pashaei</span>
-            <span className="avatar-occupation">Ui & Ux Designer</span>
-          </p>
-        </div>
-        <div className="notification col-2 ms-3  justify-content-end">
-          <img
-            src={NotificationIcon}
-            alt="Notification-icon"
-            className="notification-icon pt-2"
-          />
-        </div>
-      </div>
     </header>
   );
 }
