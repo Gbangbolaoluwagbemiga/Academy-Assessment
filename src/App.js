@@ -5,6 +5,7 @@ import SearchPanel from './components/SearchPanel';
 import NewMovie from './components/NewMovie';
 import axios from 'axios';
 import {useEffect, useReducer} from 'react';
+import Loader from './components/Loader';
 
 const initialState = {
   fullCourses: [],
@@ -67,6 +68,7 @@ function App() {
       <TopPanel />
       <SearchPanel />
       <NewMovie courses={initialCourses} />
+      {<Loader />}
     </div>
   );
 }
