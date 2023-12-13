@@ -4,7 +4,7 @@ import Jon from '../Images/Instructors/Jon.png';
 import Jason from '../Images/Instructors/Jason.png';
 import Debbie from '../Images/Instructors/Debbie.png';
 import Edwin from '../Images/Instructors/Edwin.png';
-import Erich from '../Images/Instructors/Edwin.png';
+import Erich from '../Images/Instructors/Erich.png';
 import Cassie from '../Images/Instructors/Cassie.png';
 
 function Instructor() {
