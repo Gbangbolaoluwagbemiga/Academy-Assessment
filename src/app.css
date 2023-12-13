@@ -234,6 +234,20 @@ hr {
   margin: 16px 10px;
   width: 14rem;
 }
+
+/* Your courses Component */
+.tutor-avatar {
+  border-radius: 10px;
+  height: 3rem;
+}
+.btn-courses {
+  height: 3.25rem;
+}
+.your-courses-content {
+  background: rgba(241, 241, 241, 1);
+  border-radius: 12px;
+  margin: 10px;
+}
 /* Mobile Responsiveness */
 @media screen and (max-width: 567px) {
   .arrow-icon {
