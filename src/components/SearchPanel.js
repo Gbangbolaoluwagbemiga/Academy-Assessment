@@ -14,7 +14,7 @@ function SearchPanel({query, dispatch}) {
           // console.log(response);
           dispatch({type: 'searchCourses', payload: response.data});
         } catch (error) {
-          throw new Error(error.message);
+          dispatch({type: 'dataFailed'});
         }
       };
       searchUsers();

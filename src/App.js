@@ -11,6 +11,7 @@ import YourCourses from './components/YourCourses';
 import NewsLetter from './components/NewsLetter';
 import RecentCourses from './components/RecentCourses';
 import Footer from './components/Footer';
+import Error from './Error';
 
 const initialState = {
   fullCourses: [],
@@ -44,6 +45,11 @@ function reducer(state, action) {
       return {
         ...state,
         input: action.payload,
+      };
+    case 'dataFailed':
+      return {
+        ...state,
+        status: 'error',
       };
 
     default:
@@ -110,6 +116,7 @@ function App() {
       ) : (
         ''
       )}
+      {status === 'error' && <Error />}
 
       <Instructor />
       <YourCourses />
