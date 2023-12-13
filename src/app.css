@@ -146,7 +146,14 @@ hr {
   display: flex;
   justify-content: space-around;
 }
-
+.course-image {
+  height: 5rem;
+}
+.genre {
+  border-radius: 1rem;
+  border: 2px solid whitesmoke;
+  padding: 5px;
+}
 /* Mobile Responsiveness */
 @media screen and (max-width: 567px) {
   .arrow-icon {
@@ -182,5 +189,9 @@ hr {
   .skill-category {
     display: flex;
     justify-content: space-between;
+  }
+  .course-image {
+    height: 7rem;
+    /* width: 12rem; */
   }
 }

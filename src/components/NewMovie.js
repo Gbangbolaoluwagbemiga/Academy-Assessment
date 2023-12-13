@@ -18,27 +18,26 @@ function NewMovie({courses}) {
       </div>
 
       {courses.map(course => (
-        <div className="course-content col-3">
+        <div className="course-content col-md-3" key={course.id}>
           <img
             src={course.cover_image}
-            alt="Course-content"
-            className="col-12"
+            alt="Course-content "
+            className="col-12 course-image"
           />
-          <p className="course-title col-12"></p>
+          <p className="course-title col-md-12"></p>
           <div className="features row">
-            <p className="col-4">
-              {/* <img src={} alt="Icon"  className='col-2'/> */}
-              <p className="col-6">Lesson:</p>
-              <p className="col-6">{}</p>
-            </p>
-            <p className="col-4">
-              {/* <img src={} alt="Icon"  className='col-2'/> */}
-              <p className="col-6">Student: {course.description}</p>
-              <p className="col-6">{}</p>
-            </p>
-            <p className="col-4">
-              {/* <img src={} alt="Icon"  className='col-2'/> */}
-              <p className="col-6">Student:</p>
+            <p className="col-md-6">Title: {course.title}</p>
+            <p className="col-md-6">Author: {course.author}</p>
+
+            <p className="col-md-6">Course description: {course.description}</p>
+            <p className="col-md-6">Year: {course.publication_year}</p>
+            <p className="col-md-6">
+              Genre:{' '}
+              {course.genre.map((genre, i) => (
+                <span className="mx-1 genre" key={genre[i]}>
+                  {genre}
+                </span>
+              ))}
             </p>
           </div>
         </div>
