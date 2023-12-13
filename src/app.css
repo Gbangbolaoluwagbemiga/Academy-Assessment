@@ -260,6 +260,22 @@ hr {
   border-radius: 12px;
   padding: 10px;
 }
+
+/* News letter component */
+.news-letter {
+  font-family: 'Roboto';
+  background-image: url(./Images/bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.letter-text {
+  font-size: 2.25rem;
+  font-weight: 800;
+  width: 60%;
+}
+
 /* Mobile Responsiveness */
 @media screen and (max-width: 567px) {
   .arrow-icon {
