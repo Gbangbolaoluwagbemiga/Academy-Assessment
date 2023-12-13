@@ -4,7 +4,7 @@ import instructionArrow from '../Images/instructor-arrow.png';
 function Instructor() {
   return (
     <div>
-      <div className="col-4">
+      <div className="col-md-4">
         <h2> Best Instructors</h2>
         <p className="mb-md-5">
           At The Academy, We Strive To Bring Together The Best Professors For
@@ -24,7 +24,55 @@ function Instructor() {
           </div>
         </div>
       </div>
-      <div className="col-8"></div>
+      <div className="row col-md-8">
+        <div className="col-4">
+          <img src="" alt="" className="col-12" />
+          <p className="d-flex">
+            <span>Jon Katner</span>
+            <span>Designer</span>
+          </p>
+        </div>
+
+        <div className="col-4">
+          <img src="" alt="" className="col-12" />
+          <p className="d-flex">
+            <span>Debbie LaChusa</span>
+            <span>SEO</span>
+          </p>
+        </div>
+
+        <div className="col-4">
+          <img src="" alt="" className="col-12" />
+          <p className="d-flex">
+            <span>Edwin Diaz</span>
+            <span>Composer</span>
+          </p>
+        </div>
+
+        <div className="col-4">
+          <img src="" alt="" className="col-12" />
+          <p className="d-flex">
+            <span>Cassie Evans</span>
+            <span>Photographer</span>
+          </p>
+        </div>
+
+        <div className="col-4">
+          <img src="" alt="" className="col-12" />
+          <p className="d-flex">
+            <span>Erich Andreas</span>
+            <span>Programmer</span>
+          </p>
+        </div>
+
+        <div className="col-4">
+          <img src="" alt="" className="col-12" />
+          <p className="d-flex">
+            <span>Jason Allen</span>
+            <span>Accounting</span>
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
