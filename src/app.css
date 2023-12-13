@@ -213,9 +213,27 @@ hr {
 }
 .instructors-number {
   transform: rotate(20deg);
+  width: 12rem;
+  padding: 7px 0;
+  text-align: center;
   margin-right: 6rem;
+  color: rgb(71, 88, 216);
+  border-radius: 12px;
+  background: rgba(241, 241, 241, 1);
 }
 
+.instructors {
+  background-image: url(./Images/bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.instructor-card {
+  background: rgba(241, 241, 241, 1);
+  margin: 10px;
+  width: 14rem;
+}
 /* Mobile Responsiveness */
 @media screen and (max-width: 567px) {
   .arrow-icon {

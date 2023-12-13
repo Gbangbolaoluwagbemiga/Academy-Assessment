@@ -18,7 +18,7 @@ function NewMovie({courses}) {
       </div>
 
       {courses.map(course => (
-        <div className="course-content col-md-2 my-3   " key={course.id}>
+        <div className="course-content card col-md-2 my-3   " key={course.id}>
           <img
             src={course.cover_image}
             alt="Course-content "
