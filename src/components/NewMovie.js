@@ -18,7 +18,7 @@ function NewMovie({courses}) {
       </div>
 
       {courses.map(course => (
-        <div className="course-content col-md-3" key={course.id}>
+        <div className="course-content col-md-3 my-3" key={course.id}>
           <img
             src={course.cover_image}
             alt="Course-content "
@@ -26,12 +26,12 @@ function NewMovie({courses}) {
           />
           <p className="course-title col-md-12"></p>
           <div className="features row">
-            <p className="col-md-6">Title: {course.title}</p>
-            <p className="col-md-6">Author: {course.author}</p>
+            <p className="">Title: {course.title}</p>
+            <p className="">Author: {course.author}</p>
 
-            <p className="col-md-6">Course description: {course.description}</p>
-            <p className="col-md-6">Year: {course.publication_year}</p>
-            <p className="col-md-6">
+            <p className="">Course description: {course.description}</p>
+            <p className="">Year: {course.publication_year}</p>
+            <p className="">
               Genre:{' '}
               {course.genre.map((genre, i) => (
                 <span className="mx-1 genre" key={genre[i]}>
