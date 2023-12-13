@@ -202,6 +202,20 @@ hr {
   }
 }
 
+/* Instructors component */
+.instructor-container {
+  font-size: 'Roboto';
+  margin-top: 7rem;
+}
+
+.btn-instructors {
+  height: 3.5rem;
+}
+.instructors-number {
+  transform: rotate(20deg);
+  margin-right: 6rem;
+}
+
 /* Mobile Responsiveness */
 @media screen and (max-width: 567px) {
   .arrow-icon {
