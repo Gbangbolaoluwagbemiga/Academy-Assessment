@@ -3,7 +3,7 @@ import searchIcon from '../Images/search.png';
 import Arrow from '../Images/SearchPanelArrow.png';
 import axios from 'axios';
 
-function SearchPanel({query, dispatch}) {
+function SearchPanel({query, dispatch, initialCourses}) {
   useEffect(
     function () {
       const searchUsers = async () => {
@@ -11,8 +11,10 @@ function SearchPanel({query, dispatch}) {
           const response = await axios.get(
             `https://freetestapi.com/api/v1/books?search=${query}`
           );
-          if (response.data.length === 0) return dispatch({type: 'dataFailed'});
+          if (query.length === 0)
+            return dispatch({type: 'newCourse', payload: initialCourses});
 
+          if (response.data.length === 0) return dispatch({type: 'dataFailed'});
           dispatch({type: 'searchCourses', payload: response.data});
         } catch (error) {
           dispatch({type: 'dataFailed'});
@@ -20,7 +22,7 @@ function SearchPanel({query, dispatch}) {
       };
       searchUsers();
     },
-    [dispatch, query]
+    [dispatch, query, initialCourses]
   );
 
   return (

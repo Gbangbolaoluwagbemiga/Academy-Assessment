@@ -96,7 +96,11 @@ function App() {
       <hr />
       <TopCategories />
       <TopPanel />
-      <SearchPanel dispatch={dispatch} query={input} />
+      <SearchPanel
+        dispatch={dispatch}
+        query={input}
+        initialCourses={initialCourses}
+      />
 
       {searchField === 'default' ? (
         status === 'loading' ? (
