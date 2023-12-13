@@ -231,7 +231,7 @@ hr {
 
 .instructor-card {
   background: rgba(241, 241, 241, 1);
-  margin: 10px;
+  margin: 16px 10px;
   width: 14rem;
 }
 /* Mobile Responsiveness */
@@ -273,5 +273,31 @@ hr {
   .course-image {
     height: 7rem;
     /* width: 12rem; */
+  }
+  .course-content {
+    width: 90%;
+    margin: 0 1.5rem;
+  }
+
+  .instructor-card {
+    width: 100%;
+  }
+  .instructor-container {
+    margin-top: 2rem;
+  }
+  .btn-instructors {
+    height: 2.25rem;
+    width: 8rem;
+    font-size: 0.75rem;
+  }
+  .instruction-box {
+    width: 12rem;
+  }
+  .instructors-number {
+    transform: rotate(20deg);
+    padding: 7px 0;
+    font-size: 0.75rem;
+    margin-right: 0.75rem;
+    border-radius: 12px;
   }
 }

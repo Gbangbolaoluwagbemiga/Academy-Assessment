@@ -68,7 +68,7 @@ function NavBar() {
               </div>
             </form>
 
-            <div className="user d-flex me-auto mt-4">
+            <div className="user d-flex me-auto ">
               <img src={Avatar} alt="avatar" className="avatar  me-3" />
               <p className="me-auto">
                 <span className="avatar-name">Behzad Pashaei</span>

@@ -12,19 +12,19 @@ function Instructor() {
     <div className="row  instructor-container">
       <div className="col-md-5 me-auto">
         <h2> Best Instructors</h2>
-        <p className="mb-md-5 col-9">
+        <p className="mb-md-5 col-md-9">
           At The Academy, We Strive To Bring Together The Best Professors For
           The Best Courses
         </p>
         <div className=" row mt-2 ">
-          <button className="btn-instructors btn-panel col-3 ">
+          <button className="btn-instructors btn-panel col-md-4 col-2 ">
             All Instructors <img src={btnIcon} alt="icon" />
           </button>
-          <div className="instruction-box col-8 d-flex">
+          <div className="instruction-box col-md-8 col-9 d-flex">
             <img
               src={instructionArrow}
               alt="images"
-              className="col-5 justify-items-end img-fluid  ps-5"
+              className="col-5 justify-items-end img-fluid  ps-md-5"
             />
             <p className="instructors-number ">54 Instructors</p>
           </div>
