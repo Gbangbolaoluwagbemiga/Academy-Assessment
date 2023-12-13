@@ -165,7 +165,7 @@ function YourCourses() {
             <p className="course-title">
               Beginner Nikon Digital SLR Photography{' '}
             </p>
-            <p className=" d-flex justify-content-between">
+            <p className=" d-md-flex justify-content-between">
               <p>
                 <img src={lesson} alt="Lesson" /> <span>Lesson:6</span>
               </p>
