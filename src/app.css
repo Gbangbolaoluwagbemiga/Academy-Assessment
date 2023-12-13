@@ -7,6 +7,7 @@ html {
 
 .top-header {
   font-family: 'Roboto';
+  cursor: pointer;
 }
 
 .assessment {
@@ -66,11 +67,6 @@ hr {
 }
 
 /* Top-categories component  */
-.tag-icon {
-  /* border: ; */
-  /* background-color: rgba(0, 158, 104, 1); */
-  /* rgba(250, 250, 250, 1) */
-}
 .img-tag {
   height: 2.25rem;
 }
@@ -255,7 +251,8 @@ hr {
 .teacher {
   font-weight: 700;
 }
-.courses-text {
+.courses-text,
+.comment-text {
   background: rgba(241, 241, 241, 1);
   border-radius: 12px;
   padding: 10px;
@@ -309,6 +306,9 @@ hr {
 .logo-container {
   width: 5rem;
 }
+.footer-text-title {
+  font-weight: 700;
+}
 
 /* Mobile Responsiveness */
 @media screen and (max-width: 567px) {
@@ -335,7 +335,7 @@ hr {
   }
   .search-field {
     font-size: 0.75rem;
-    width: 9rem;
+    width: 10rem;
   }
   .arrow-icon {
     position: absolute;
@@ -426,9 +426,9 @@ hr {
 
   .links,
   .quick-access {
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
   }
   .certificate {
     width: 100%;

@@ -16,6 +16,7 @@ const initialState = {
   fullCourses: [],
   initialCourses: [],
   status: 'loading',
+  searchField: 'default',
 };
 
 function reducer(state, action) {
@@ -24,7 +25,20 @@ function reducer(state, action) {
       return {...state, fullCourses: action.payload, status: 'ready'};
 
     case 'newCourses':
-      return {...state, initialCourses: action.payload, status: 'ready'};
+      return {
+        ...state,
+        initialCourses: action.payload,
+        status: 'ready',
+        searchField: 'default',
+      };
+
+    case 'searchCourses':
+      return {
+        ...state,
+        initialCourses: action.payload,
+        status: 'ready',
+        searchField: 'searcher',
+      };
 
     default:
       return state;
@@ -32,10 +46,8 @@ function reducer(state, action) {
 }
 
 function App() {
-  const [{fullCourses, initialCourses, status}, dispatch] = useReducer(
-    reducer,
-    initialState
-  );
+  const [{fullCourses, initialCourses, status, searchField}, dispatch] =
+    useReducer(reducer, initialState);
 
   useEffect(function () {
     const fetchAllUsers = async () => {

@@ -3,7 +3,7 @@ import certificate from '../Images/certificate.png';
 
 function Footer() {
   return (
-    <div className="footer mt-md-5 row">
+    <div className="footer mt-md-5 mt-4 row">
       <div className="top-footer row">
         <p className="text col-md-10 order-2 order-md-2 me-auto">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -29,12 +29,14 @@ function Footer() {
 
       <div className="row center-footer">
         <div className="col-md-5 certificate">
-          <p className="certificate-header">MEMBERSHIP CERTIFICATE</p>
+          <p className="certificate-header footer-text-title">
+            MEMBERSHIP CERTIFICATE
+          </p>
           <img src={certificate} alt="certificate" className="certificate" />
         </div>
 
         <div className="col-md-2 categories">
-          <p className="categories-header">CATEGORIES</p>
+          <p className="categories-header footer-text-title">CATEGORIES</p>
           <div className="links">
             <p>Designing</p>
             <p>Programming</p>
@@ -51,7 +53,7 @@ function Footer() {
           </div>
         </div>
         <div className="col-md-2 ">
-          <p className="categories-header">QUICK ACCESS</p>
+          <p className="categories-header footer-text-title">QUICK ACCESS</p>
           <div className="quick-access">
             <p>What we offer </p>
             <p>Careers</p>
@@ -69,7 +71,7 @@ function Footer() {
         </div>
 
         <div className="col-md-3 new-comment">
-          <p className="">NEW COMMENT</p>
+          <p className="footer-text-title">NEW COMMENT</p>
           <div className="comment-content">
             <p className="comment-header fw-bold">Ellsmartx</p>
             <p className="comment-text">
