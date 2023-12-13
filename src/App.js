@@ -80,7 +80,7 @@ function App() {
       <Instructor />
       <YourCourses />
       <NewsLetter />
-      <RecentCourses />
+      <RecentCourses courses={fullCourses} />
     </div>
   );
 }

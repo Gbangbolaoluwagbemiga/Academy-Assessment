@@ -297,6 +297,12 @@ hr {
   bottom: 4rem;
   left: 14rem;
 }
+
+/* Recent courses component */
+.recent-courses {
+  font-family: 'Roboto';
+}
+
 /* Mobile Responsiveness */
 @media screen and (max-width: 567px) {
   .arrow-icon {
