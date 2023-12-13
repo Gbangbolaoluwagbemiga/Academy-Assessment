@@ -6,7 +6,7 @@ import NotificationIcon from '../Images/Bell.png';
 
 function NavBar() {
   return (
-    <header className="row mb-5 top-header">
+    <header className="row mb-md-5 top-header">
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
           <p className="assessment ">
@@ -20,7 +20,7 @@ function NavBar() {
             <span className="assessment-text">ACADEMY</span>
           </p>
           <button
-            className="navbar-toggler btn-sm"
+            className="navbar-toggler btn"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarTogglerDemo02"

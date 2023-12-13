@@ -5,7 +5,7 @@ import btnContainer from '../Images/btn container.png';
 
 function TopPanel() {
   return (
-    <div className="row mt-5">
+    <div className="row mt-md-5">
       <div className="col-md-5 left-top-panel align-items-end mt-5">
         🙌 Hello Friends <br /> I Am Sofia And We Want To Start <br /> A{' '}
         <span className="sub--text"> Web Design</span> Course Together. Do You
