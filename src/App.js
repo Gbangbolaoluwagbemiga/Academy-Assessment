@@ -7,14 +7,18 @@ import axios from 'axios';
 import {useEffect, useReducer} from 'react';
 
 const initialState = {
-  courses: [],
+  fullCourses: [],
+  initialCourses: [],
   status: 'loading',
 };
 
 function reducer(state, action) {
   switch (action.type) {
     case 'dataReceived':
-      return {...state, courses: action.payload, status: 'ready'};
+      return {...state, fullCourses: action.payload, status: 'ready'};
+
+    case 'newCourses':
+      return {...state, initialCourses: action.payload, status: 'ready'};
 
     default:
       return state;
@@ -22,10 +26,13 @@ function reducer(state, action) {
 }
 
 function App() {
-  const [{courses}, dispatch] = useReducer(reducer, initialState);
+  const [{fullCourses, initialCourses}, dispatch] = useReducer(
+    reducer,
+    initialState
+  );
 
   useEffect(function () {
-    const fetchUsers = async () => {
+    const fetchAllUsers = async () => {
       try {
         const response = await axios.get(
           'https://freetestapi.com/api/v1/books'
@@ -35,8 +42,23 @@ function App() {
         console.error();
       }
     };
+    fetchAllUsers();
+  }, []);
+
+  useEffect(function () {
+    const fetchUsers = async () => {
+      try {
+        const response = await axios.get(
+          'https://freetestapi.com/api/v1/books?limit=8'
+        );
+        dispatch({type: 'newCourses', payload: response.data});
+      } catch (error) {
+        console.error();
+      }
+    };
     fetchUsers();
   }, []);
+
   return (
     <div className=" container">
       <NavBar />
@@ -44,7 +66,7 @@ function App() {
       <TopCategories />
       <TopPanel />
       <SearchPanel />
-      <NewMovie />
+      <NewMovie courses={initialCourses} />
     </div>
   );
 }
