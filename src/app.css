@@ -423,4 +423,14 @@ hr {
     bottom: 3.2rem;
     left: 11rem;
   }
+
+  .links,
+  .quick-access {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .certificate {
+    width: 100%;
+  }
 }

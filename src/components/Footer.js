@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="footer mt-md-5 row">
       <div className="top-footer row">
-        <p className="text col-10 me-auto">
+        <p className="text col-md-10 order-2 order-md-2 me-auto">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas
           purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris
@@ -17,11 +17,11 @@ function Footer() {
           duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam
           maecenas sed enim. Velit ut tortor pretium
         </p>
-        <p className="logo-container col-1 ms-auto">
+        <p className="logo-container col-md-1 order-1 order-md-2 ms-md-auto">
           <img
             src={logo}
             alt="logo"
-            className="col-12 logo text-center ms-4 "
+            className="col-md-12 logo text-center  ms-md-4 "
           />
           <h4 className="fw-bold text-logo ">ACADEMY</h4>
         </p>
@@ -30,7 +30,7 @@ function Footer() {
       <div className="row center-footer">
         <div className="col-md-5 certificate">
           <p className="certificate-header">MEMBERSHIP CERTIFICATE</p>
-          <img src={certificate} alt="certificate" />
+          <img src={certificate} alt="certificate" className="certificate" />
         </div>
 
         <div className="col-md-2 categories">
@@ -50,7 +50,7 @@ function Footer() {
             <p>Camerawork</p>
           </div>
         </div>
-        <div className="col-md-2">
+        <div className="col-md-2 ">
           <p className="categories-header">QUICK ACCESS</p>
           <div className="quick-access">
             <p>What we offer </p>
