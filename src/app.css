@@ -236,6 +236,9 @@ hr {
 }
 
 /* Your courses Component */
+.your-courses {
+  font-size: 'Roboto';
+}
 .tutor-avatar {
   border-radius: 10px;
   height: 3rem;
@@ -247,6 +250,10 @@ hr {
   background: rgba(241, 241, 241, 1);
   border-radius: 12px;
   margin: 10px;
+  width: 39.25rem;
+}
+.teacher {
+  font-weight: 700;
 }
 /* Mobile Responsiveness */
 @media screen and (max-width: 567px) {
