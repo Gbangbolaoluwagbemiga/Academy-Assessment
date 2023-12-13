@@ -28,12 +28,12 @@ function Footer() {
       </div>
 
       <div className="row center-footer">
-        <div className="col-5 certificate">
+        <div className="col-md-5 certificate">
           <p className="certificate-header">MEMBERSHIP CERTIFICATE</p>
           <img src={certificate} alt="certificate" />
         </div>
 
-        <div className="col-2 categories">
+        <div className="col-md-2 categories">
           <p className="categories-header">CATEGORIES</p>
           <div className="links">
             <p>Designing</p>
@@ -50,7 +50,7 @@ function Footer() {
             <p>Camerawork</p>
           </div>
         </div>
-        <div className="col-2">
+        <div className="col-md-2">
           <p className="categories-header">QUICK ACCESS</p>
           <div className="quick-access">
             <p>What we offer </p>
@@ -68,7 +68,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="col-3 new-comment">
+        <div className="col-md-3 new-comment">
           <p className="">NEW COMMENT</p>
           <div className="comment-content">
             <p className="comment-header fw-bold">Ellsmartx</p>
