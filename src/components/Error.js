@@ -1,7 +1,7 @@
 function Error() {
   return (
     <p className="error">
-      <span>💥</span> No Books Found.
+      <p className="error-emoji">🙇‍♂️</p> Sorry No Books Found.
     </p>
   );
 }

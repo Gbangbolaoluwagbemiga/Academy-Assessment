@@ -2,7 +2,7 @@ import DownWardIcon from '../Images/new-course icon.png';
 
 function NewMovie({courses}) {
   return (
-    <div className="new-movies row mt-5">
+    <div className="new-movies row mt-md-5">
       <div className="new-movies-header row">
         <p className="Title-Section col-md-6">New Courses(BOOKS)</p>
         <div className="tabs  col-md-6  ">

@@ -309,7 +309,16 @@ hr {
 .footer-text-title {
   font-weight: 700;
 }
-
+.error {
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 2rem;
+}
+.error-emoji {
+  font-size: 2rem;
+}
 /* Mobile Responsiveness */
 @media screen and (max-width: 567px) {
   .arrow-icon {

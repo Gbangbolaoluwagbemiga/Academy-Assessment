@@ -50,6 +50,7 @@ function reducer(state, action) {
       return {
         ...state,
         status: 'error',
+        fullCourses: [],
       };
 
     default:
@@ -101,7 +102,7 @@ function App() {
         status === 'loading' ? (
           <Loader />
         ) : (
-          <NewMovie courses={initialCourses} />
+          <NewMovie courses={initialCourses}>New Courses(BOOKS)</NewMovie>
         )
       ) : (
         ''
@@ -111,7 +112,9 @@ function App() {
         status === 'loading' ? (
           <Loader />
         ) : (
-          <NewMovie courses={fullCourses} />
+          <NewMovie courses={fullCourses}>
+            Searched {fullCourses.length > 0 ? 'Courses' : 'course'}(BOOKS)
+          </NewMovie>
         )
       ) : (
         ''
