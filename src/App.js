@@ -7,6 +7,7 @@ import axios from 'axios';
 import {useEffect, useReducer} from 'react';
 import Loader from './components/Loader';
 import Instructor from './components/Instructor';
+import YourCourses from './components/YourCourses';
 
 const initialState = {
   fullCourses: [],
@@ -75,6 +76,7 @@ function App() {
         <NewMovie courses={initialCourses} />
       )}
       <Instructor />
+      <YourCourses />
     </div>
   );
 }
