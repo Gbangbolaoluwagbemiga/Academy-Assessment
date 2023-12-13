@@ -17,6 +17,7 @@ const initialState = {
   initialCourses: [],
   status: 'loading',
   searchField: 'default',
+  input: '',
 };
 
 function reducer(state, action) {
@@ -39,6 +40,11 @@ function reducer(state, action) {
         status: 'ready',
         searchField: 'searcher',
       };
+    case 'inputField':
+      return {
+        ...state,
+        input: action.payload,
+      };
 
     default:
       return state;
@@ -46,7 +52,7 @@ function reducer(state, action) {
 }
 
 function App() {
-  const [{fullCourses, initialCourses, status, searchField}, dispatch] =
+  const [{fullCourses, initialCourses, status, searchField, input}, dispatch] =
     useReducer(reducer, initialState);
 
   useEffect(function () {
@@ -57,7 +63,7 @@ function App() {
         );
         dispatch({type: 'dataReceived', payload: response.data});
       } catch (error) {
-        console.error();
+        throw new Error();
       }
     };
     fetchAllUsers();
@@ -71,7 +77,7 @@ function App() {
         );
         dispatch({type: 'newCourses', payload: response.data});
       } catch (error) {
-        console.error();
+        throw new Error(error.message);
       }
     };
     fetchUsers();
@@ -83,13 +89,29 @@ function App() {
       <hr />
       <TopCategories />
       <TopPanel />
-      <SearchPanel />
+      <SearchPanel dispatch={dispatch} query={input} />
 
-      {status === 'loading' ? (
-        <Loader />
+      {searchField === 'default' ? (
+        status === 'loading' ? (
+          <Loader />
+        ) : (
+          <NewMovie courses={initialCourses} />
+        )
       ) : (
-        <NewMovie courses={initialCourses} />
+        ''
       )}
+
+      {searchField === 'searcher' ? (
+        status === 'loading' ? (
+          <Loader />
+        ) : (
+          // <NewMovie courses={initialCourses} />
+          <p>Hiiii</p>
+        )
+      ) : (
+        ''
+      )}
+
       <Instructor />
       <YourCourses />
       <NewsLetter />

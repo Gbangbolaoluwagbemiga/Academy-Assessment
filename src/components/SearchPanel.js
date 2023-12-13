@@ -1,7 +1,26 @@
+import {useEffect} from 'react';
 import searchIcon from '../Images/search.png';
 import Arrow from '../Images/SearchPanelArrow.png';
+import axios from 'axios';
 
-function SearchPanel() {
+function SearchPanel({query, dispatch}) {
+  useEffect(
+    function () {
+      const searchUsers = async () => {
+        try {
+          const response = await axios.get(
+            `https://freetestapi.com/api/v1/books?search=${query}`
+          );
+          dispatch({type: 'searchCourses', payload: response.data});
+        } catch (error) {
+          throw new Error(error.message);
+        }
+      };
+      searchUsers();
+    },
+    [dispatch, query]
+  );
+
   return (
     <div className="mx-auto mb-5 search-box">
       <h2 className="text-center search-header-text mb-5 ">
@@ -21,6 +40,9 @@ function SearchPanel() {
             type="text"
             placeholder="Search Anything"
             className="searcher search-field"
+            onChange={e => {
+              dispatch({type: 'inputField', payload: e.target.value});
+            }}
           />
           <img className="search-icon" src={searchIcon} alt="Search-icon" />
         </p>
