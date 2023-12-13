@@ -265,6 +265,9 @@ hr {
   .arrow-icon {
     position: relative;
   }
+  .user {
+    margin-top: 1rem;
+  }
   .dev-model {
     height: 20rem;
     width: 40rem;
