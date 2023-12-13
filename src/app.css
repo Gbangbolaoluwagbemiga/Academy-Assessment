@@ -137,6 +137,7 @@ hr {
 .new-movies {
   font-family: 'Roboto';
   font-weight: 600;
+  cursor: pointer;
 }
 .tabs {
   display: flex;
