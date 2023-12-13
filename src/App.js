@@ -10,6 +10,7 @@ import Instructor from './components/Instructor';
 import YourCourses from './components/YourCourses';
 import NewsLetter from './components/NewsLetter';
 import RecentCourses from './components/RecentCourses';
+import Footer from './components/Footer';
 
 const initialState = {
   fullCourses: [],
@@ -81,6 +82,7 @@ function App() {
       <YourCourses />
       <NewsLetter />
       <RecentCourses courses={fullCourses} />
+      <Footer />
     </div>
   );
 }
