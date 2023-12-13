@@ -255,6 +255,11 @@ hr {
 .teacher {
   font-weight: 700;
 }
+.courses-text {
+  background: rgba(241, 241, 241, 1);
+  border-radius: 12px;
+  padding: 10px;
+}
 /* Mobile Responsiveness */
 @media screen and (max-width: 567px) {
   .arrow-icon {
@@ -330,5 +335,11 @@ hr {
     width: 5.25rem;
     font-size: 0.75rem;
     text-align: center;
+  }
+  .jon-name {
+    font-size: 0.9rem;
+  }
+  .footer-avatar-name {
+    font-size: 0.75rem;
   }
 }

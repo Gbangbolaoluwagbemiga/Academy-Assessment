@@ -1,7 +1,5 @@
 import Jon from '../Images/Instructors/Jon.png';
-import Jason from '../Images/Instructors/Jason.png';
 import Debbie from '../Images/Instructors/Debbie.png';
-import Edwin from '../Images/Instructors/Edwin.png';
 import Erich from '../Images/Instructors/Edwin.png';
 import Cassie from '../Images/Instructors/Cassie.png';
 import happyMale from '../Images/Courses/happy-male.png';
@@ -56,8 +54,8 @@ function YourCourses() {
                   alt="Debbie"
                   className="col-3 me-3 tutor-avatar"
                 />
-                <p className="me-5 col-8">
-                  <strong>Jon Kantner</strong> <br />
+                <p className="me-5 col-8 footer-avatar-name">
+                  <strong className="jon-name">Jon Kantner</strong> <br />
                   SEO
                 </p>
                 <button className="btn-panel btn-courses col-9">
@@ -102,8 +100,8 @@ function YourCourses() {
                   alt="Debbie"
                   className="col-3 me-3 tutor-avatar"
                 />
-                <p className="me-5 col-8">
-                  <strong>Jon Kantner</strong> <br />
+                <p className="me-5 col-8 footer-avatar-name">
+                  <strong className="jon-name">Jon Kantner</strong> <br />
                   Designer
                 </p>
                 <button className="btn-panel btn-courses col-9">
@@ -116,7 +114,7 @@ function YourCourses() {
 
         {/* Python for beginner section */}
         <div className="col-md-5 mb-5 row your-courses-content ">
-          <img src={android} alt="Jon" className="col-md-5 my-3 me-auto " />
+          <img src={python} alt="Jon" className="col-md-5 my-3 me-auto " />
           <div className=" col-md-7 my-3">
             <p className="course-title">
               Python for Beginners - Learn Programming...
@@ -148,8 +146,8 @@ function YourCourses() {
                   alt="Debbie"
                   className="col-3 me-3 tutor-avatar"
                 />
-                <p className="me-5 col-8">
-                  <strong>Jon Kantner</strong> <br />
+                <p className="me-5 col-8 footer-avatar-name">
+                  <strong className="jon-name">Jon Kantner</strong> <br />
                   Design teacher
                 </p>
                 <button className="btn-panel btn-courses col-9">
@@ -162,7 +160,7 @@ function YourCourses() {
 
         {/* Beginner Nikon Section */}
         <div className="col-md-5 mb-5 row your-courses-content ">
-          <img src={android} alt="Jon" className="col-md-5 my-3 me-auto " />
+          <img src={beginner} alt="Jon" className="col-md-5 my-3 me-auto " />
           <div className=" col-md-7 my-3">
             <p className="course-title">
               Beginner Nikon Digital SLR Photography{' '}
@@ -194,8 +192,8 @@ function YourCourses() {
                   alt="Debbie"
                   className="col-3 me-3 tutor-avatar"
                 />
-                <p className="me-5 col-8">
-                  <strong>Jon Kantner</strong> <br />
+                <p className="me-5 col-8 footer-avatar-name">
+                  <strong className="jon-name">Jon Kantner</strong> <br />
                   Photographer
                 </p>
                 <button className="btn-panel btn-courses col-9">
