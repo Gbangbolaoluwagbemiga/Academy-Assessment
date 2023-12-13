@@ -144,7 +144,8 @@ hr {
 }
 .tabs {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .course-image {
   height: 10rem;
@@ -153,6 +154,12 @@ hr {
   border-radius: 1rem;
   border: 2px solid whitesmoke;
   padding: 5px;
+}
+.course-content {
+  background: rgba(241, 241, 241, 1);
+  border-radius: 12px;
+  width: 19rem;
+  margin: 0 0.75rem;
 }
 /* Mobile Responsiveness */
 @media screen and (max-width: 567px) {
