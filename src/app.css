@@ -302,6 +302,13 @@ hr {
 .recent-courses {
   font-family: 'Roboto';
 }
+/* Footer component */
+.footer {
+  font-family: 'Roboto';
+}
+.logo-container {
+  width: 5rem;
+}
 
 /* Mobile Responsiveness */
 @media screen and (max-width: 567px) {

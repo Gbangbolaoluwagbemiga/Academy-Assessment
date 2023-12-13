@@ -3,9 +3,9 @@ import certificate from '../Images/certificate.png';
 
 function Footer() {
   return (
-    <div className="footer row">
+    <div className="footer mt-md-5 row">
       <div className="top-footer row">
-        <p className="text col-8">
+        <p className="text col-10 me-auto">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas
           purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris
@@ -17,19 +17,23 @@ function Footer() {
           duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam
           maecenas sed enim. Velit ut tortor pretium
         </p>
-        <p className="logo col-4">
-          <img src={logo} alt="logo" className="col-12" />
-          <p className="fw-bold text-logo">ACADEMY</p>
+        <p className="logo-container col-1 ms-auto">
+          <img
+            src={logo}
+            alt="logo"
+            className="col-12 logo text-center ms-4 "
+          />
+          <h4 className="fw-bold text-logo ">ACADEMY</h4>
         </p>
       </div>
 
-      <div className="center-footer">
-        <div className="col-3 certificate">
+      <div className="row center-footer">
+        <div className="col-5 certificate">
           <p className="certificate-header">MEMBERSHIP CERTIFICATE</p>
           <img src={certificate} alt="certificate" />
         </div>
 
-        <div className="col-3 categories">
+        <div className="col-2 categories">
           <p className="categories-header">CATEGORIES</p>
           <div className="links">
             <p>Designing</p>
@@ -46,7 +50,7 @@ function Footer() {
             <p>Camerawork</p>
           </div>
         </div>
-        <div className="col-3">
+        <div className="col-2">
           <p className="categories-header">QUICK ACCESS</p>
           <div className="quick-access">
             <p>What we offer </p>
@@ -93,7 +97,7 @@ function Footer() {
         </div>
       </div>
 
-      <footer className="text-right">All Copyright (C) 2022 Reserved</footer>
+      <footer className="text-end">All Copyright (C) 2022 Reserved</footer>
     </div>
   );
 }
