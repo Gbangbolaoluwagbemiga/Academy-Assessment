@@ -9,6 +9,7 @@ import Loader from './components/Loader';
 import Instructor from './components/Instructor';
 import YourCourses from './components/YourCourses';
 import NewsLetter from './components/NewsLetter';
+import RecentCourses from './components/RecentCourses';
 
 const initialState = {
   fullCourses: [],
@@ -79,6 +80,7 @@ function App() {
       <Instructor />
       <YourCourses />
       <NewsLetter />
+      <RecentCourses />
     </div>
   );
 }
