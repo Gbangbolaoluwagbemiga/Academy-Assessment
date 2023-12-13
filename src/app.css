@@ -264,7 +264,8 @@ hr {
 /* News letter component */
 .news-letter {
   font-family: 'Roboto';
-  background-image: url(./Images/bg.png);
+  background-image: url(./Images/News-letter-cover.png);
+  background-color: rgba(71, 88, 216, 0.109);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -273,9 +274,19 @@ hr {
 .letter-text {
   font-size: 2.25rem;
   font-weight: 800;
-  width: 60%;
+  width: 50rem;
+  padding: 16px;
 }
-
+.news-form {
+  background-image: url(./Images/Rectanle-full.png), url(./Images/Rectangle.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-position: right, center;
+}
+.news-search {
+  margin-top: 3rem;
+  width: 19rem;
+}
 /* Mobile Responsiveness */
 @media screen and (max-width: 567px) {
   .arrow-icon {
