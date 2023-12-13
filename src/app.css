@@ -280,12 +280,22 @@ hr {
 .news-form {
   background-image: url(./Images/Rectanle-full.png), url(./Images/Rectangle.png);
   background-repeat: no-repeat, no-repeat;
-  background-size: contain, contain;
+  background-size: contain, cover;
   background-position: right, center;
 }
 .news-search {
   margin-top: 3rem;
-  width: 19rem;
+  width: 25rem;
+}
+.search-news {
+  padding: 10px;
+}
+.btn-news {
+  position: relative;
+  display: inline;
+  width: 10rem;
+  bottom: 4rem;
+  left: 14rem;
 }
 /* Mobile Responsiveness */
 @media screen and (max-width: 567px) {
@@ -371,5 +381,15 @@ hr {
   }
   .footer-avatar-name {
     font-size: 0.75rem;
+  }
+  .letter-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px 20px;
+  }
+  .news-search {
+    margin-top: 1.5rem;
+    width: 100%;
   }
 }
