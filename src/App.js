@@ -36,7 +36,7 @@ function reducer(state, action) {
     case 'searchCourses':
       return {
         ...state,
-        initialCourses: action.payload,
+        fullCourses: action.payload,
         status: 'ready',
         searchField: 'searcher',
       };
@@ -105,8 +105,7 @@ function App() {
         status === 'loading' ? (
           <Loader />
         ) : (
-          // <NewMovie courses={initialCourses} />
-          <p>Hiiii</p>
+          <NewMovie courses={fullCourses} />
         )
       ) : (
         ''
