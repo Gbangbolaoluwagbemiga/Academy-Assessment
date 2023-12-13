@@ -27,7 +27,7 @@ function reducer(state, action) {
 }
 
 function App() {
-  const [{fullCourses, initialCourses}, dispatch] = useReducer(
+  const [{fullCourses, initialCourses, status}, dispatch] = useReducer(
     reducer,
     initialState
   );
@@ -67,8 +67,12 @@ function App() {
       <TopCategories />
       <TopPanel />
       <SearchPanel />
-      <NewMovie courses={initialCourses} />
-      {<Loader />}
+
+      {status === 'loading' ? (
+        <Loader />
+      ) : (
+        <NewMovie courses={initialCourses} />
+      )}
     </div>
   );
 }
