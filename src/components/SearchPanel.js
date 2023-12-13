@@ -11,7 +11,8 @@ function SearchPanel({query, dispatch}) {
           const response = await axios.get(
             `https://freetestapi.com/api/v1/books?search=${query}`
           );
-          // console.log(response);
+          if (response.data.length === 0) return dispatch({type: 'dataFailed'});
+
           dispatch({type: 'searchCourses', payload: response.data});
         } catch (error) {
           dispatch({type: 'dataFailed'});

@@ -11,7 +11,7 @@ import YourCourses from './components/YourCourses';
 import NewsLetter from './components/NewsLetter';
 import RecentCourses from './components/RecentCourses';
 import Footer from './components/Footer';
-import Error from '../src/components/Error';
+import Error from './components/Error';
 
 const initialState = {
   fullCourses: [],
@@ -116,6 +116,7 @@ function App() {
       ) : (
         ''
       )}
+
       {status === 'error' && <Error />}
 
       <Instructor />
