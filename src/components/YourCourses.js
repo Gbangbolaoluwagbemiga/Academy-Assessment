@@ -27,30 +27,28 @@ function YourCourses() {
 
       <div className="row col-12 ">
         {/* Google Ads Training section */}
-        <div className="col-5 mb-5 row your-courses-content ">
-          <img src={happyMale} alt="Jon" className="col-5 me-auto " />
-          <div className=" col-7">
+        <div className="col-md-5 mb-5 row your-courses-content ">
+          <img src={happyMale} alt="Jon" className="col-md-5 my-3 me-auto " />
+          <div className=" col-md-7 my-3">
             <p className="teacher">Google Ads Training 2021: Profit With Pay</p>
-            <p className=" d-flex justify-content-between">
+            <p className=" d-md-flex justify-content-between">
               <p>
-                <img src={lesson} alt="" /> <span>Lesson:6</span>
+                <img src={lesson} alt="Lesson" /> <span>Lesson:6</span>
               </p>
               <p>
-                <img src={student} alt="" /> <span>Student:198</span>
+                <img src={student} alt="Student" /> <span>Student:198</span>
               </p>
               <p>
-                <img src={difficulty} alt="" /> <span>Average</span>
+                <img src={difficulty} alt="Difficulty" /> <span>Average</span>
               </p>
             </p>
-
+            <img src={points} alt="range" className=" col-12" />{' '}
             <div className="col-12">
-              <img src={points} alt="range" className=" col-12" />{' '}
               <p className="d-flex justify-content-between">
                 <span> points: 75/100</span>
                 <span>Days:56</span>
               </p>
             </div>
-
             <div>
               <p className="col-6 d-flex">
                 <img
@@ -71,13 +69,13 @@ function YourCourses() {
         </div>
 
         {/* Mobile App section */}
-        <div className="col-5 mb-5 row your-courses-content ">
-          <img src={android} alt="Jon" className="col-5 me-auto " />
-          <div className=" col-7">
+        <div className="col-md-5 mb-5 row  your-courses-content ">
+          <img src={android} alt="Jon" className="col-md-5 my-3 me-auto " />
+          <div className=" col-md-7 my-3">
             <p className="course-title">
               ASO & Mobile App Marketing: Monetize You
             </p>
-            <p className=" d-flex justify-content-between">
+            <p className=" d-md-flex justify-content-between">
               <p>
                 <img src={lesson} alt="Lesson" /> <span>Lesson:6</span>
               </p>
@@ -117,13 +115,13 @@ function YourCourses() {
         </div>
 
         {/* Python for beginner section */}
-        <div className="col-5 mb-5 row your-courses-content ">
-          <img src={android} alt="Jon" className="col-5 me-auto " />
-          <div className=" col-7">
+        <div className="col-md-5 mb-5 row your-courses-content ">
+          <img src={android} alt="Jon" className="col-md-5 my-3 me-auto " />
+          <div className=" col-md-7 my-3">
             <p className="course-title">
               Python for Beginners - Learn Programming...
             </p>
-            <p className=" d-flex justify-content-between">
+            <p className=" d-md-flex  justify-content-between">
               <p>
                 <img src={lesson} alt="Lesson" /> <span>Lesson:6</span>
               </p>
@@ -163,9 +161,9 @@ function YourCourses() {
         </div>
 
         {/* Beginner Nikon Section */}
-        <div className="col-5 mb-5 row your-courses-content ">
-          <img src={android} alt="Jon" className="col-5 me-auto " />
-          <div className=" col-7">
+        <div className="col-md-5 mb-5 row your-courses-content ">
+          <img src={android} alt="Jon" className="col-md-5 my-3 me-auto " />
+          <div className=" col-md-7 my-3">
             <p className="course-title">
               Beginner Nikon Digital SLR Photography{' '}
             </p>
